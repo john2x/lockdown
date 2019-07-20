@@ -1,7 +1,30 @@
-(require 'cl-lib)
+;;; lockdown.el --- Block network connections.
 
+;; Author: John Louis Del Rosario <john2x@gmail.com>
+;; URL: https://github.com/john2x/lockdown
+;; Version: 0.0.1-alpha
+
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;; This package provides a global minor mode that blocks network
+;; connections to hosts that are not whitelisted.
 
 ;;; Code:
+
+(require 'cl-lib)
 
 (defgroup lockdown nil
   "Block network calls unless the host is whitelisted."

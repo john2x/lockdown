@@ -4,8 +4,9 @@ Block network connections to non-whitelisted hosts done by Emacs.
 
 This package is a work-in-progress/proof-of-concept.
 
-It is implemented as an `advice` before `make-network-process`, and
-checks the host or remote address of each network process call.
+It is implemented as an `advice` before
+[`make-network-process`](https://www.gnu.org/software/emacs/manual/html_node/elisp/Network-Processes.html#Network-Processes),
+and checks the host or remote address of each network process call.
 
 ## Why
 

@@ -17,6 +17,22 @@ and starts exfiltrating buffer contents to some remote server.
 
 The only goal is to block packages from talking to unknown hosts.
 
+## Configuration
+
+```
+(require 'lockdown)
+
+;; Whitelisted host names. Wildcards are supported.
+(setq lockdown-hosts-whitelist
+  '("example.com" "*.example.com" "google.com" "*.google.com"))
+
+;; Don't block requests, only log them to *Messages* buffer
+;; (setq lockdown-log-only t)
+
+;; Enable lockdown
+(lockdown-global-mode)
+```
+
 ## Future work
 
 At the moment, only network connections done via

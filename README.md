@@ -1,6 +1,6 @@
 # Lockdown
 
-Block network connections from Emacs to non-whitelisted.
+Block network connections from Emacs to non-whitelisted hosts.
 
 This package is a work-in-progress/proof-of-concept.
 

@@ -1,6 +1,6 @@
 # Lockdown
 
-Block network connections to non-whitelisted hosts done by Emacs.
+Block network connections from Emacs to non-whitelisted.
 
 This package is a work-in-progress/proof-of-concept.
 
@@ -22,5 +22,8 @@ The only goal is to block packages from talking to unknown hosts.
 At the moment, only network connections done via
 `make-network-process` are checked. A malicious package could still
 use `shell-command` and `curl` to talk to some server. A similar
-approach to advicing `shell-command` to check for `curl` usage (and
-`wget`, etc.) could work.
+approach to advicing `make-process` and/or `call-process` to check for
+`curl` usage (and `wget`, etc.) could work.
+
+- [ ] `make-process`
+- [ ] `call-process`

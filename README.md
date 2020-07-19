@@ -4,7 +4,7 @@
 
 Block network connections from Emacs to non-whitelisted hosts.
 
-Disclaimer/Warning: This package is a work-in-progress/**proof-of-concept**. A malicious package could just as easily remove the `advice` set by this package, so it's not really usable.
+**Disclaimer/Warning**: This package is a work-in-progress/**proof-of-concept**. A malicious package could just as easily remove the `advice` set by this package, so it's not really usable.
 
 It is implemented as an `advice` before
 [`make-network-process`](https://www.gnu.org/software/emacs/manual/html_node/elisp/Network-Processes.html#Network-Processes),
